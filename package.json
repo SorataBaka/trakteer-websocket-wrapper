@@ -1,0 +1,33 @@
+{
+  "name": "trakteer-websocket-wrapper",
+  "version": "0.0.1",
+  "description": "A wrapper for saweria websocket endpoint.",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "start": "tsc && node ./build/index.js"
+  },
+  "keywords": [
+    "saweria",
+    "websocket",
+    "wrapper",
+    "api"
+  ],
+  "author": "Christian Harjuno (SorataBaka)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "events": "^3.3.0",
+    "ws": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.0",
+    "@types/ws": "^8.2.2"
+  },
+  "types": "./index.d.ts",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
