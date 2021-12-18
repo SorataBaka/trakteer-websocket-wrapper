@@ -5,7 +5,7 @@ import EventEmitter from "events"
  * @param widgetURL
  * @param socketURL
  */
-class TrakteerSocket extends EventEmitter{
+export default class TrakteerSocket extends EventEmitter{
   public TrakteerToken:string
   public TrakteerSocket:WebSocket
   public PingIntervalTime:number = 25000
@@ -85,4 +85,3 @@ class TrakteerSocket extends EventEmitter{
     this.TrakteerSocket.close()
   }
 }
-export default TrakteerSocket

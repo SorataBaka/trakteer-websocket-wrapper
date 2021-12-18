@@ -88,4 +88,4 @@ class TrakteerSocket extends events_1.default {
         this.TrakteerSocket.close();
     };
 }
-exports.default = TrakteerSocket;
+module.exports = TrakteerSocket;
