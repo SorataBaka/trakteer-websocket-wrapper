@@ -17,7 +17,6 @@
   "author": "Christian Harjuno (SorataBaka)",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^13.3.1",
     "events": "^3.3.0",
     "ws": "^8.3.0"
   },
