@@ -1,4 +1,4 @@
-const  { TrakteerClient } = require("./src/index.js")
+const  { TrakteerClient } = require("../src/index.js")
 const client = new TrakteerClient({
   mainChannelID: "",
   testChannelID: ""
