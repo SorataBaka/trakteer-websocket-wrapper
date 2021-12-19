@@ -1,14 +1,15 @@
-interface ClientParameter {
-  widgetURL: string
+import { EventEmitter } from "stream";
+
+export interface ClientParameter {
   mainChannelID: string
   testChannelID: string
 }
-interface WebsocketEvent {
+export interface WebsocketEvent {
   event: string
   data ? : string
   channel ? : string
 }
-interface Donation {
+export interface Donation {
   tip_id: string
   supporter_name: string
   unit: string
@@ -19,4 +20,13 @@ interface Donation {
   price: string
   id: string
   type: string
+}
+export interface TrakteerSocket extends EventEmitter {
+  TrakteerSocket:WebSocket
+  PingIntervalTime:number
+  PingInterval:ReturnType<typeof setInterval>
+  mainChannelID:string
+  testChannelID:string
+  close():void
+  interval():ReturnType<typeof setInterval>
 }

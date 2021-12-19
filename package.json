@@ -17,6 +17,7 @@
   "author": "Christian Harjuno (SorataBaka)",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "events": "^3.3.0",
     "ws": "^8.3.0"
   },
