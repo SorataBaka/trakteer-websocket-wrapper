@@ -39,12 +39,16 @@ client.on("close", (data)=>{
 `npm install trakteer-websocket-wrapper` <br>
 
 <h2>Usage</h2> <br>
-Go to the trakteer dashboard
-Click on "Stream Overlay"
-Click on "Open URL"
-Go to Inspect Elements
-Click on Network
-Click On "WS"
-Click On "Messages"
-Refresh the page
-Find ```{"event":"pusher:subscribe","data":{"auth":"","channel":"creator-stream-test.asadfasdfalqy.trstream-asdfadfasdfasfa"}}``` for both creator-stream and creator-test-stream on Messages
+1. Go to the trakteer dashboard <br>
+2. Click on "Stream Overlay" <br>
+3. Click on "Open URL" <br>
+4. Go to Inspect Elements <br>
+5. Click on Network <br>
+6. Click On "WS" <br>
+7. Click On "Messages" <br>
+8. Refresh the page <br>
+9. Find 
+  ```
+  {"event":"pusher:subscribe","data":{"auth":"","channel":"creator-stream-test.asadfasdfalqy.trstream-asdfadfasdfasfa"}}
+  ```
+  for both creator-stream and creator-test-stream on Messages tab <br>
