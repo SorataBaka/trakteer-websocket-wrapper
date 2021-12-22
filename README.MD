@@ -1,10 +1,10 @@
 # Trakteer Websocket Wrapper
 Simple websocket wrappper for trakteer. This module requires both creator-stream channels id to be provided in order to be able to connect to the servers and receive data. <br>
 ```Javascript
-const TrakteerSocket = require("trakteer-websocket-wrapper")
+const { TrakteerSocket } = require("trakteer-websocket-wrapper")
 const client = new TrakteerSocket({
     mainChannelID: "creator-stream.a6z7asdfadn4mlqy.trstream-asdfadfasdfasfqT",
-    testChanneLID: "creator-stream-test.a6sadfeafzn4mlqy.trstream-asdfadfasdfasfqT"
+    testChannelID: "creator-stream-test.a6sadfeafzn4mlqy.trstream-asdfadfasdfasfqT"
 })
 //Emitted when client receive donations in trakteer
 client.on("donation", (data)=>{
